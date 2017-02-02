@@ -1,0 +1,30 @@
+{
+  "name": "MEANbeltexam",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "colors": "^1.1.2",
+    "express": "^4.14.1",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.8.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingjianjzhang/MEANbeltexam.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mingjianjzhang/MEANbeltexam/issues"
+  },
+  "homepage": "https://github.com/mingjianjzhang/MEANbeltexam#readme",
+  "description": ""
+}

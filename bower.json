@@ -1,0 +1,24 @@
+{
+  "name": "DFWCSC",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Jesse Borries"
+  ],
+  "license": "ISC",
+  "homepage": "landing.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-messages": "^1.5.9",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.6.1"
+  }
+}
