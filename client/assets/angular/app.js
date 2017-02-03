@@ -25,8 +25,8 @@ app.config(function($routeProvider, $httpProvider){
 		.when("/marketing", {
 			templateUrl: "./partials/marketing.html"
 		})
-		.when("/developer", {
-			templateUrl: "./partials/developer.html"
+		.when("/developers", {
+			templateUrl: "./partials/developers.html"
 		})
 		.when("/loginreg", {
 			templateUrl: "./partials/loginreg.html"

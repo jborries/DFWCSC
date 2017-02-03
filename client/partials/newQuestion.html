@@ -1,58 +1,66 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <div ng-controller='QuestionsController'>
+        <div class="container-fluid" style="background-color:#333; ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#/dashboard">Home</a>
-    </div>
+                <a class="navbar-brand" href="#/dashboard" style="color:white;">Home</a>
+            </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#!" ng-click="logout()">Logout</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#!" ng-click="logout()" style="color:white;">Logout</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
 </nav>
 <div class="container">
 
-<h1> New Project Scope </h1>
-<p class="alert-danger">{{ questionErrs }}</p>
-<form ng-submit="submitQuestion(newQuestion)">
-	<div class="form-group">
-		<label for="question">Your Name</label>
-		<textarea class="form-control" id="question" ng-model="newQuestion.content"></textarea>
-	</div>
-	<div class="form-group">
-		<label for="description">Email</label>
-		<textarea class="form-control" id="description" ng-model="newQuestion.description"></textarea>
-	</div>
-    <div class="form-group">
-		<label for="phone">Phone Number</label>
-		<textarea class="form-control" id="phone" ng-model="newQuestion.phone"></textarea>
-	</div>
-    <div class="form-group">
-		<label for="language">Preferred Language</label>
-		<textarea class="form-control" id="language" ng-model="newQuestion.language"></textarea>
-	</div>
-    <div class="form-group">
-		<label for="user">Who will be the end user?</label>
-		<textarea class="form-control" id="user" ng-model="newQuestion.user"></textarea>
-	</div><div class="form-group">
-		<label for="email">Email</label>
-		<textarea class="form-control" id="email" ng-model="newQuestion.email"></textarea>
-	</div>
-    <div class="form-group">
-		<label for="description">Do you need us to host the site?</label>
-		<textarea class="form-control" id="description" ng-model="newQuestion.description" placeholder="(Don't worry, you can leave blank and we can explain.)"></textarea>
-	</div>
+    <h1> New Project Scope </h1>
+    <p class="alert-danger">{{ questionErrs }}</p>
+    <form ng-submit="submitQuestion(newQuestion)">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <textarea class="form-control" id="names" ng-model="newQuestion.name"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <textarea class="form-control" id="email" ng-model="newQuestion.email"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <textarea class="form-control" id="phone" ng-model="newQuestion.phone"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="location">What are of DFW are you in?</label>
+            <textarea class="form-control" id="location" ng-model="newQuestion.location" placeholder="It's okay if you're a bit outside DFW proper too!"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="language">Do you have a preferred coding language you'd like your project to be written in?</label>
+            <textarea class="form-control" id="language" ng-model="newQuestion.language" placeholder="We'll help you decide if you don't know!"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="user">Who will be the end user?</label>
+            <textarea class="form-control" id="user" ng-model="newQuestion.user" placeholder="(E.g. The Public, Students, Consumers, Business Partners, Employees, Yourself)"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="host">Do you need us to host the site?</label>
+            <textarea class="form-control" id="host" ng-model="newQuestion.host" placeholder="(Don't worry, you can leave blank and we can explain.)"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="description">Please explain your project to us. Be as detailed as possible:</label>
+            <textarea class="form-control" id="description" ng-model="newQuestion.description" placeholder="Tip! This field is expandable by dragging the lower right corner."></textarea>
+        </div>
 
-	<button class="btn btn-primary" type="submit">Submit Your Question</button>
-</form>
+        <button class="btn btn-primary" type="submit">Submit Your Question</button>
+    </form>
 </div>
